@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pretrained_models/
+pretrained_models/
+.cache/
+*.log
+.DS_Store
+.vscode/
+.idea/

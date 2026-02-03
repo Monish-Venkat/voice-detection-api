@@ -1,0 +1,10 @@
+flask==3.0.0
+torch>=2.6.0
+torchaudio>=2.6.0
+transformers>=4.38.0
+librosa>=0.10.1
+pydub>=0.25.1
+python-dotenv>=1.0.0
+scikit-learn>=1.4.0
+soundfile>=0.12.1
+gunicorn>=21.2.0

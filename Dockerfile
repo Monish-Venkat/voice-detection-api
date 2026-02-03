@@ -12,6 +12,11 @@ RUN apt-get update \
 WORKDIR /app
 
 COPY requirement.txt /app/requirement.txt
+
+# Install CPU-only PyTorch wheels (much smaller than CUDA builds)
+RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch torchaudio
+
+# Install remaining dependencies from PyPI
 RUN pip install --no-cache-dir -r /app/requirement.txt
 
 COPY . /app
